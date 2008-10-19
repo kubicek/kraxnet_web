@@ -3,7 +3,8 @@ require 'sinatra'
 
 Sinatra::Application.default_options.merge!(
   :run => false,
-  :env => ENV['RACK_ENV']
+  :env => ENV['RACK_ENV'],
+  :views => './views'
 )
 
 log = File.new("log/sinatra.log", "w")
