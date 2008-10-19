@@ -1,11 +1,10 @@
-#$:.unshift File.dirname(__FILE__) + '/sinatra/lib'
 require 'rubygems'
 require 'sinatra'
  
 get '/' do
-    "Hello World"
+  redirect "/sluzby"
 end
 
 get '/:id' do
-    erb params[:id].gsub(/-/,'').to_sym
+  erb params[:id].gsub(/-/,'').to_sym
 end
