@@ -23,12 +23,12 @@
   <table border="0" width="130" height="100%" bgcolor="#E6E6E6" cellspacing="0" cellpadding="0" align="left">
     <tr>
       <td valign="top">
-        <ul>
-          <li><a href="/historie">Historie</a></li>
-          <li><a href="/mise-a-vize">Mise a vize</a></li>
-          <li><a href="/sluzby">Služby</a></li>
-          <li><a href="/clenstvi">Členství</a></li>
-          <li><a href="/kontakt">Kontakt</a></li>
+        <ul class="menu">
+          <li><a href="/historie" id="<%= params[:id]=="historie" ? 'active' : '' %>">Historie</a></li>
+          <li><a href="/mise-a-vize" id="<%= params[:id]=="mise-a-vize" ? 'active' : '' %>">Mise a vize</a></li>
+          <li><a href="/sluzby" id="<%= params[:id]=="sluzby" ? 'active' : '' %>">Služby</a></li>
+          <li><a href="/clenstvi" id="<%= params[:id]=="clenstvi" ? 'active' : '' %>">Členství</a></li>
+          <li><a href="/kontakt" id="<%= params[:id]=="kontakt" ? 'active' : '' %>">Kontakt</a></li>
         </ul>
       </td>
     </tr>
