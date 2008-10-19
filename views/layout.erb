@@ -3,7 +3,7 @@
 
 <html>
 <head>
-  <title>KRAXNET s.r.o.</title>
+  <title><%= @page_title.nil? ? '' : "#{@page_title} - " %>KRAXNET s.r.o.</title>
   <meta name="description" content="Description of site">
   <meta name="keywords" content="Keywords">
   <meta name="distribution" content="global">
@@ -55,7 +55,10 @@
           <tr>
             <td valign="top"><img src="/images/vline1.gif" width="20" height="200" alt="" border="0"><br>
             <img src="/images/vline2.gif" width="20" height="43" alt="" border="0"></td>
-            <td colspan="2"><%= yield %></td>
+            <td colspan="2">
+				<h1><%= @page_title %></h1>
+				<%= yield %>
+			</td>
           </tr>
         </table>
       </td>
