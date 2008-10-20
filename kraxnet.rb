@@ -14,6 +14,7 @@ get '/novinky' do
     result = RSS::Parser.parse(response, false)
     @blog_items = result.items[0..10]
   end
+  @page_title = "Novinky"
   erb :rss_reader
 end
 
