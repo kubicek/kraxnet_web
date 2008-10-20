@@ -1,0 +1,7 @@
+<% for blog_item in @blog_items do %>
+<h2><%= blog_item.title %></h2>
+<div><%= blog_item.pubDate %></div>
+<p><%= blog_item.description[0..200] %>
+<a href="<%= blog_item.link %>">celý&nbsp;článek&nbsp;&raquo;</a></p>
+</p>
+<% end %>
