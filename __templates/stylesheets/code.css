@@ -1,0 +1,65 @@
+/* Stylesheet adapted from TextMate theme Mac Classic */
+
+pre {
+  margin: 0;
+}
+
+code {
+	margin: 0 !important;
+	padding: 0 !important;
+	font-family: Monaco, monospace;
+	font-size: 11px;
+	line-height: 1em !important;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+code {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+
+.comment {
+	color: #0066FF;
+	font-style: italic;
+}
+
+.keywords {
+	color: #0000FF;
+	font-weight: bold;
+}
+
+.string {
+	color: #009f45;
+}
+
+.constant {
+	color: #C5060B;
+	font-weight: bold;
+}
+
+.symbol {
+  /*color: #21439C;*/
+  color: #C5060B;
+}
+
+.rails {
+	color: #318495;
+}
+
+.capistrano {
+  color: #318495;
+}
+
+.capistrano_symbol {
+  color: #585CF6;
+  font-weight: bold;
+}
+
+.true_false {
+  color: #1C02FF;
+}

@@ -1,0 +1,36 @@
+/* Reset Blueprint */
+a:link:after, a:visited:after {content: '';}
+a:link.external:after {content:" (" attr(href) ") ";font-size:90%;}
+
+/* Common */
+.noprint { display: none !important; }
+.cl, .clear, .cleaner { clear: both; font-size: 0px; height: 0; }
+a { color: #000; }
+a img { border:none !important;}
+table { border-collapse: collapse; }
+td, th { text-align: left; border: 1px solid #444; padding: 0.5em;}
+th { color: #444; background: #f8f8f8; }
+
+pre { border: 1px dotted #ccc; padding: 1em; }
+
+/* Hide */  
+#top_navigation_bar a img,
+#sidebar,
+.zahlavi p.wiki_links
+  { display: none; }
+
+button,
+button *
+  { color: #222 !important; }
+  
+body {line-height:1.5;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;color:#000;background:none;font-size:10pt;}
+.container {background:none;}
+hr {background:#ccc;color:#ccc;width:100%;height:1px;padding:0;border:none;}
+hr.space {background:#fff;color:#fff;}
+h1, h2, h3, h4, h5, h6 {font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif;}
+code {font:.9em "Courier New", Monaco, Courier, monospace;}
+
+/* Re-style */
+#footer { margin-top: 2cm; border-top: 1pt solid #000; font-size: 85%; }
+#footer h4 { margin: 5pt 0 5pt 0; }
+#footer p { margin: 0 0 5pt 0; }
