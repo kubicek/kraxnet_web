@@ -33,6 +33,12 @@ a { color: #2e3330; }
 .content th, .content td { text-align: left; border-bottom: 1px solid #dae8f3; padding: 0.5em 0.1em; }
 .content th { color: #3b4854; background: #a6d5ff; border-bottom: 2px solid #92c5f2; text-align: left; }
 .content tr:last-child td { border-width: 2px; }
+.content table.light th
+  { color: #3d4954; font-size: 95%; font-weight: normal; }
+.content table.light td,
+.content table.light th
+  { background: none; border-bottom: 1px solid #dae8f3; }
+.content table.light tr:last-child td { border-width: 1px; }
 
 /* Headers */
 .container h1
