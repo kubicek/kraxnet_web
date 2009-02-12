@@ -7,8 +7,10 @@
 <div class="press_releases archive">
 <% @blog_items.each do |blog_item| %>
 <div class="item">
+<a href="<%= blog_item.link %>">
 <h3><%= blog_item.title %> <small class="date"><%= human_date(blog_item.pubDate) %></small></h3>
-<p><%= truncate( blog_item.description, 250) %> <a href="<%= blog_item.link %>">Celý&nbsp;článek&nbsp;&raquo;</a></p>
+<p><%= truncate( blog_item.description, 250) %> <span class="more">Celý&nbsp;článek&nbsp;&raquo;</span></p>
+</a>
 </div>
 
 <% end %>

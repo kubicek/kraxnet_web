@@ -311,7 +311,7 @@ body
     margin-left: 1em;
     width: 17em;
     float: right; }
-.press_releases li span.content .more
+.press_releases .more
   { font-size: 90%;
     text-decoration: underline; }
 .press_releases li span.content strong
@@ -338,6 +338,10 @@ body
   { font-size: 150%; }
 .press_releases.archive h3 small
   { font-size: 70%; }
+.press_releases.archive a:hover h3
+  { text-decoration: underline; }
+.press_releases.archive a:hover p
+  { color: #2a353b; }
 .press_releases.archive .item
   { margin: 1em 0 1em 0;
     padding: 0 0 1em 0;
