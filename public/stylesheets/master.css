@@ -321,6 +321,7 @@ body
     font-size: 110%;
     margin: 0 0 8px 0;
     padding: 0 0 8px 0;
+    text-transform: uppercase;
     background: url('../images/dotted_line_300px.png') bottom left no-repeat; }
 .press_releases li a
   { color: #2a353b;
