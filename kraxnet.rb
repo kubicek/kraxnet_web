@@ -2,9 +2,9 @@ require 'rubygems'
 require 'sinatra'
 require 'open-uri'
 require 'rss'
- 
+
 get '/' do
-  redirect "/sluzby"
+  erb :index
 end
 
 get '/novinky' do
