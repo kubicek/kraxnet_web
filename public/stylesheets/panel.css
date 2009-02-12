@@ -1,0 +1,94 @@
+/* (c) Scott Schiller */
+
+/* See: http://www.schillmania.com/content/projects/even-more-rounded-corners */
+
+/* Source: http://www.schillmania.com/projects/dialog2/demo/dialog.css */
+
+
+/* 
+  -- Even more rounded corners with CSS: Base stylesheet --
+*/
+
+.panel {
+ position:relative;
+ margin:0px auto;
+ min-width:8em;
+ max-width:760px; /* based on image dimensions - not quite consistent with drip styles yet */
+/* color:#fff;*/
+ z-index:1;
+ margin-left:12px; /* default, width of left corner */
+ margin-bottom:0.5em; /* spacing under dialog */
+}
+
+.panel .content,
+.panel .t,
+.panel .b,
+.panel .b div {
+ background:transparent url("../images/bg/panel-800-800.png") no-repeat top right;
+ _background-image:url("../images/bg/panel-800-800.gif");
+}
+
+.panel .content {
+ position:relative;
+ zoom:1;
+ _overflow-y:hidden;
+ padding:0px 12px 0px 0px;
+}
+
+.panel .t {
+ /* top+left vertical slice */
+ position:absolute;
+ left:0px;
+ top:0px;
+ width:12px; /* top slice width */
+ margin-left:-12px;
+ height:100%;
+ _height:1600px; /* arbitrary long height, IE 6 */
+ background-position:top left;
+}
+
+.panel .b {
+ /* bottom */
+ position:relative;
+ width:100%;
+}
+
+.panel .b,
+.panel .b div {
+ height:30px; /* height of bottom cap/shade */
+ font-size:1px;
+}
+
+.panel .b {
+ background-position:bottom right;
+}
+
+.panel .b div {
+ position:relative;
+ width:12px; /* bottom corner width */
+ margin-left:-12px;
+ background-position:bottom left;
+}
+
+.panel .hd,
+.panel .bd,
+.panel .ft {
+ position:relative;
+}
+
+.panel .wrapper {
+ /* extra content protector - preventing vertical overflow (past background) */
+ position:static;
+ max-height:1000px;
+ overflow:auto; /* note that overflow:auto causes a rather annoying redraw "lag" in Firefox 2, and may degrade performance. Might be worth trying without if you aren't worried about height/overflow issues. */
+}
+
+.panel h1,
+.panel p {
+ margin:0px; /* margins will blow out backgrounds, leaving whitespace. */
+ padding:0.5em 0px 0.5em 0px;
+}
+
+.panel h1 {
+ padding-bottom:0px;
+}

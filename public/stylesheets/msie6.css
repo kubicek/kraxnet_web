@@ -1,0 +1,77 @@
+/* Fix layout */
+#top_navigation_bar
+  { width: 112em; }
+.container
+  { width: 80em; }
+#page
+  { background: none; }
+#sidebar input
+  { width: 10em; }
+#sidebar button
+  { padding: 0.4em 0 0.4em 0 !important; }
+#sidebar button,
+#sidebar button span
+  { background: #e8faf0 !important; }
+#footer .inner
+  { width: 106.5em; }
+#footer .column
+  { width: 27%; }
+
+
+
+
+/* Fix resets */
+.container h1, 
+.container h2,
+.container h3,
+.container h4
+  { font-weight: bold; }
+  
+  
+.content ul li
+  { list-style-type: disc !important; 
+    background: none; 
+    padding: 0 ;
+    margin:  0 0 0 1.3em; }
+
+
+/* Reset buttons */
+button 
+  { color: #66696b;
+    background: #f0f3f1 !important; 
+    font-weight: bold !important;
+    padding: 0px !important; 
+    margin: 0 !important; 
+    height: auto !important; }
+button span
+  { color: #66696b !important;
+    background: #f0f3f1 !important; }
+button span.icon
+  { top: 0; }
+
+button.big span
+  { padding: 6px 5px 6px 10px !important; }
+button.big span .icon
+  { background-position: 0 0 !important; }
+
+
+/* Fix PNG transparency */
+
+#top_navigation_bar a#xnet_logo_small img
+  { visibility: hidden; }
+#top_navigation_bar a#xnet_logo_small 
+{ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/xnet_small_logo.png', sizingMethod='image'); 
+  display: block;
+  float: left;
+  width: 21px; height: 13px;
+  margin: -3px 5px 0 0; }
+
+#header h1 a img
+  { visibility: hidden; }
+#header h1 a
+  { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/xnet_wiki_logo.png', sizingMethod='image'); 
+    display: block;
+    width: 70px; height: 66px; }
+    
+#footer .copyleft
+  { background-image: url('../images/copyleft.whitebg.png'); }

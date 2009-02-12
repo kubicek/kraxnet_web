@@ -1,0 +1,12 @@
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+.container
+  { font-size: 100%; }
+  
+button span
+  { padding: 4px 3px 4px 13px !important; }
+
+#top_navigation_bar div
+  { left: 0; }
+
+}

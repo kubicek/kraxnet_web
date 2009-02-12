@@ -1,3 +1,7 @@
+<div id="main">
+
+  <div class="content">
+
 <% for blog_item in @blog_items do %>
 <h2><%= blog_item.title %></h2>
 <div><%= blog_item.pubDate %></div>
@@ -5,3 +9,7 @@
 <a href="<%= blog_item.link %>">celý&nbsp;článek&nbsp;&raquo;</a></p>
 </p>
 <% end %>
+
+  </div><!-- /content -->
+
+</div><!-- /main -->

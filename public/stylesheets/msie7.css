@@ -1,0 +1,15 @@
+#top_navigation_bar span
+  { padding-top: 0.6em; }
+#top_navigation_bar a#xnet_logo_small img
+  { margin-top: -1px; }
+
+.content ol li
+  { margin-left: 1.8em; }
+.content ul li
+  { margin-left: 1.4em; }
+.comments ol li
+  { border-top: 2px solid #e3f2fa !important;
+    margin-left: 0; }
+
+#sidebar input
+  { width: 10em; }
