@@ -22,6 +22,10 @@ helpers do
     chars.size > limit ? chars.to_s[0...limit] + '&hellip;' : chars
   end
 
+  def css_class_for_menuitem(id=nil)
+    'active' if params[:id].to_s == id.to_s
+  end
+
 end
 
 get '/' do
@@ -32,6 +36,7 @@ end
 get '/novinky' do
   @blog_items = Kraxnet::BlogFeed.load
   @page_title = "Novinky"
+  params[:id] = 'novinky'
   erb :novinky
 end
 
