@@ -41,6 +41,6 @@ get '/novinky' do
 end
 
 get '/:id' do
-  erb params[:id].gsub(/-/,'').to_sym
+  erb params[:id].to_sym
 end
 
