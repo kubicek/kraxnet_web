@@ -273,8 +273,9 @@ body
 
 .panel h3
   { color: #1b1d1f;
-    font-size: 130%;
+    font-size: 135%;
     font-family: 'Lucida Grande', Tahoma, Helvetica, sans-serif;
+    letter-spacing: -0.05em;
     margin: 0; }
 
 
@@ -333,7 +334,14 @@ body
 .press_releases p.archive
   { font-size: 90%;
     margin-left: 7em; } 
-
+.press_releases.archive h3
+  { font-size: 150%; }
+.press_releases.archive h3 small
+  { font-size: 70%; }
+.press_releases.archive .item
+  { margin: 1em 0 1em 0;
+    padding: 0 0 1em 0;
+    background: url('../images/dotted_line_300px.png') bottom left no-repeat; }
 
 /* ----- Footer -------------------------------------------------------------------------------- */
 

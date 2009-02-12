@@ -4,14 +4,15 @@
 
 <h1><%= @page_title %></h1>
 
+<div class="press_releases archive">
 <% @blog_items.each do |blog_item| %>
-<h2><%= blog_item.title %></h2>
-<div><%= human_date(blog_item.pubDate) %></div>
-<p><%= truncate( blog_item.description, 250) %>
-<a href="<%= blog_item.link %>">celý&nbsp;článek&nbsp;&raquo;</a></p>
-</p>
+<div class="item">
+<h3><%= blog_item.title %> <small class="date"><%= human_date(blog_item.pubDate) %></small></h3>
+<p><%= truncate( blog_item.description, 250) %> <a href="<%= blog_item.link %>">Celý&nbsp;článek&nbsp;&raquo;</a></p>
+</div>
 
 <% end %>
+</div><!-- /press_releases -->
 
   </div><!-- /content -->
 
