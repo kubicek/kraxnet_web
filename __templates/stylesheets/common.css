@@ -1,0 +1,47 @@
+/* Some defaults, reset Blueprint styling */
+
+.cl, .clear, .cleaner { clear: both; font-size: 0px; height: 0; line-height: 0; }
+
+.noscreen, .nodisplay { display: none; }
+
+hr { display: none; }
+
+html, body { height: 100%; }
+
+body { margin: 0; padding: 0; line-height: 140%; }
+
+body h1, body h2, body h3 { margin: 0; }
+body h1 { margin: 0; padding: 0; }
+body h2 { font-size: 130%;}
+body h3 { font-size: 120%; }
+  
+p, ul, ol { margin: 0; margin-bottom: 0.2em; }
+ul, ol { padding: 0; }
+
+p.small { line-height: 125%; }
+
+p.inline { margin-bottom: 0; display: inline; }
+
+a img, a:hover img { text-decoration: none !important; border: none !important; }
+
+address { font-style: normal; }
+
+em { background: transparent; }
+
+cite { font-style: normal; }
+
+label { font-weight: normal; }
+
+.notice,
+.error,
+.notice *,
+.error *
+  { color: inherit;
+    background: none;
+    border: none; 
+    padding: 0;
+    margin: 0; }
+.error
+  { color: #fb1f2d; }
+.message
+  { padding: 0.5em 0 0.5em 0; }

@@ -1,0 +1,39 @@
+/* Buttons */
+button
+  { color: #66696b;
+    background-color: transparent !important;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0; margin: 0;
+    border: none !important;
+    height: 20px !important;
+    cursor: pointer; 
+    /*border: 1px solid red !important;*/ }
+button span
+  { background: url('../images/buttons/button_default.bg.l.png') 0 50% no-repeat; 
+    padding: 4px 3px 4px 13px !important; 
+    padding: 6px 13px 6px 13px !important; }
+button span.r
+  { background: url('../images/buttons/button_default.bg.r.png') 0 50% no-repeat;
+    margin: 0 !important; 
+    padding-left: 11px !important;
+    width: 11px !important;}
+button span.icon      /* Default icon = nil */
+  { background: none; 
+    font-size: 6px;
+    width: 0px; padding: 0 !important; margin: 0 !important; } 
+button.add span.icon, /* Icons */
+button.edit span.icon,
+button.delete span.icon,
+button.settings span.icon
+  { background-position: 0 40%; background-repeat: no-repeat;
+    width: 11px; padding: 3px 3px 2px 9px !important; }
+button.add span.icon      { background-image: url('../images/icons/11/add.bw.png'); }
+button.edit span.icon     { background-image: url('../images/icons/11/edit.bw.png'); }
+button.delete span.icon   { background-image: url('../images/icons/11/delete.bw.png'); }
+button.settings span.icon { background-image: url('../images/icons/11/edit.bw.png'); }
+button.hover.add span.icon      { background-image: url('../images/icons/11/add.png'); }
+button.hover.edit span.icon     { background-image: url('../images/icons/11/edit.png'); }
+button.hover.delete span.icon   { background-image: url('../images/icons/11/delete.png'); }
+button.hover.settings span.icon { background-image: url('../images/icons/11/edit.png'); }

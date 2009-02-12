@@ -1,121 +1,20 @@
-/* =====    GENERAL   ========================================================================== */ 
-
-/* Some defaults, reset Blueprint styling */
-
-.cl, .clear, .cleaner { clear: both; font-size: 0px; height: 0; line-height: 0; }
-
-.noscreen, .nodisplay { display: none; }
-
-hr { display: none; }
-
-html, body { height: 100%; }
-
-body { margin: 0; padding: 0; line-height: 140%; }
-
-body h1, body h2, body h3 { margin: 0; }
-body h1 { margin: 0; padding: 0; }
-body h2 { font-size: 130%;}
-body h3 { font-size: 120%; }
+@import url('common.css');
+@import url('panel.css');
+@import url('buttons.css');
   
-p, ul, ol { margin: 0; margin-bottom: 0.2em; }
-ul, ol { padding: 0; }
-
-p.small { line-height: 125%; }
-
-p.inline { margin-bottom: 0; display: inline; }
-
-a img, a:hover img { text-decoration: none !important; border: none !important; }
-
-address { font-style: normal; }
-
-em { background: transparent; }
-
-cite { font-style: normal; }
-
-label { font-weight: normal; }
-  
-div#display
-  { margin: 0 !important; padding: 0 !important; }  
-
-.notice,
-.error,
-.notice *,
-.error *
-  { color: inherit;
-    background: none;
-    border: none; 
-    padding: 0;
-    margin: 0; }
-.error
-  { color: #fb1f2d; }
-.message
-  { padding: 0.5em 0 0.5em 0; }
-
-
-/* Layout */
-#page
-  { min-height: 100%; position: relative; }
-.container
-  { min-width: 600px; 
-  	max-width: 80em; 
-  	margin: 0 auto; 
-  	padding: 0 0 20em 0; 
-  	position: relative; }
-
-  
-/* Typography */
-
+/* --- Typography --- */
 body 
   { color: #2e3330;
     font-size: 75%; 
-    font-family: 'Lucida Grande', Tahoma, Helvetica, sans-serif; }
+    font-family: 'Lucida Grande', Tahoma, Helvetica, sans-serif;
+    line-height: 140%; }
     
 a { color: #2e3330; }
 
-
-/* Buttons */
-button
-  { color: #66696b;
-    background-color: transparent !important;
-    font-size: 9px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 0; margin: 0;
-    border: none !important;
-    height: 20px !important;
-    cursor: pointer; 
-    /*border: 1px solid red !important;*/ }
-button span
-  { background: url('../images/buttons/button_default.bg.l.png') 0 50% no-repeat; 
-    padding: 4px 3px 4px 13px !important; 
-    padding: 6px 13px 6px 13px !important; }
-button span.r
-  { background: url('../images/buttons/button_default.bg.r.png') 0 50% no-repeat;
-    margin: 0 !important; 
-    padding-left: 11px !important;
-    width: 11px !important;}
-button span.icon      /* Default icon = nil */
-  { background: none; 
-    font-size: 6px;
-    width: 0px; padding: 0 !important; margin: 0 !important; } 
-button.add span.icon, /* Icons */
-button.edit span.icon,
-button.delete span.icon,
-button.settings span.icon
-  { background-position: 0 40%; background-repeat: no-repeat;
-    width: 11px; padding: 3px 3px 2px 9px !important; }
-button.add span.icon      { background-image: url('../images/icons/11/add.bw.png'); }
-button.edit span.icon     { background-image: url('../images/icons/11/edit.bw.png'); }
-button.delete span.icon   { background-image: url('../images/icons/11/delete.bw.png'); }
-button.settings span.icon { background-image: url('../images/icons/11/edit.bw.png'); }
-button.hover.add span.icon      { background-image: url('../images/icons/11/add.png'); }
-button.hover.edit span.icon     { background-image: url('../images/icons/11/edit.png'); }
-button.hover.delete span.icon   { background-image: url('../images/icons/11/delete.png'); }
-button.hover.settings span.icon { background-image: url('../images/icons/11/edit.png'); }
-
+.content
+  { line-height: 140%; }
 
 /* Links */
-
 .content a
   { color: #2e3330; }
 .content a.no_underline
@@ -131,28 +30,92 @@ button.hover.settings span.icon { background-image: url('../images/icons/11/edit
 /* Tables */
 .content table { margin: 0.5em 0 1.5em 0; border-collapse: collapse; width: 100%; }
 .content table caption { color: #595959; text-align: left; margin: 1em 0 0.5em 0;}
-.content th, .content td { text-align: left; border: 1px solid #edf2ef; padding: 0.2em;}
-.content th { color: #444; background: #edf2ef; text-align: left; }
+.content th, .content td { text-align: left; border-bottom: 1px solid #dae8f3; padding: 0.5em 0.1em; }
+.content th { color: #3b4854; background: #a6d5ff; border-bottom: 2px solid #92c5f2; text-align: left; }
+.content tr:last-child td { border-width: 2px; }
 
 /* Headers */
 .container h1
-  { color: #64696e;
+  { color: #596e80;
     background: url('../images/bg/dot.red.png') center left no-repeat;
+    font-family: Tahoma, Helvetica, sans-serif;
     font-size: 200%;
     font-weight: normal;
     line-height: 125%; 
-    margin: 1em 0 0.5em 0;
+    letter-spacing: -0.05em;
+    margin: 0 0 0.5em 0;
     padding: 0 0 0 15px; }
 
-.container h2
-  { color: #64696e;
-    font-size: 120%;
-    text-transform: uppercase;
+.container h2,
+.container h3
+  { color: #3d4954;
+    font-family: Tahoma, Helvetica, sans-serif;
     font-weight: normal; }
+.container h2
+  { font-size: 160%;
+    margin: 1.5em 0 0.3em 0; }
+.container h3
+  { font-size: 140%;
+    margin: 1em 0 0.2em 0; }
+
 
 /* Text */
 .container p
  { margin-bottom: 0.8em; }
+
+.content .highlight
+ { background-color: #d1eaff;
+   padding: 0.1em 0.3em 0.2em 0.3em;
+   font-weight: normal; }
+
+.content small
+  { color: #5b666b;
+    font-size: 95%; }
+
+/* Images */
+.container .content p img
+  { border: 3px solid #c2dcf2;
+    margin: 0.3em 1em 1em 0;
+    float: left; }
+.container .content p strong img
+  { border: 6px solid #c2dcf2;
+    margin: 1em auto;
+    float: none; }
+
+/* --- General layout --- */
+
+body 
+  { color: #1b1d1f;
+    background: #f2f8fd url('../images/bg/body.bg.png') 0 0 repeat-x; }
+
+#page
+ { min-height: 100%; position: relative; }
+
+.container
+ { min-width: 600px; 
+ 	max-width: 80em; 
+ 	margin: 0 auto; 
+ 	padding: 0 0 20em 0; 
+ 	position: relative; }
+
+#left
+  { float: left;
+    width: 160px;
+    margin-top: -10px;
+    margin-right: 14px; }
+
+#middle
+  { margin-right: 2em;
+    float: left;
+    width: 40em; }
+
+#right
+  { float: left; }
+
+#main
+  { margin: -0.75em 2em 0 0;
+    float: left;
+    width: 60em; }
 
 
 /* ----- Top Navigation Bar -------------------------------------------------------------------- */
@@ -194,23 +157,19 @@ button.hover.settings span.icon { background-image: url('../images/icons/11/edit
   { background: url('../images/bg/top_navigation_bar.bg.r.png') 0 0 no-repeat; }
 
 
-/* =====    MAIN   ============================================================================= */
+/* ----- Header -------------------------------------------------------------------------------- */
 
-body 
-  { background: #f2f8fd url('../images/bg/body.bg.png') 0 0 repeat-x; }
+#header
+  { margin: 10px 0 30px 0; }
 
 #header img
   { margin-left: -6px; }
 
-/* ==== LEFT ===*/
 
-#left
-  { float: left;
-    width: 160px;
-    margin-right: 14px; }
+/* ----- Menu --------------------------------------------------------------------------- */
 
 #left #menu
-  { }
+  { font-size: 95%; }
 #left #menu ul
   {  }
 #left #menu ul li
@@ -221,38 +180,58 @@ body
     clear: both; }
 #left #menu ul li span
   { background: url('../images/bg/menu_item_bg.png') 0 0 no-repeat;
-    padding: 0.2em 14px 0.1em 14px;
+    padding: 0.2em 5px 0.1em 14px;
     display: block;
     height: 21px;
-    float: left; }
+    float: left; 
+    max-width: 130px;
+    overflow: hidden; }
 #left #menu ul li span.r
   { background: url('../images/bg/menu_item_bg.r.png') 0 0 no-repeat;
-    width: 11px; }
+    width: 11px;
+    padding: 0;
+    overflow: hidden; }
 #left #menu ul li a
   { color: #243140;
     font-weight: bold;
-    text-decoration: none; }
+    text-decoration: none;
+    height: 18px;
+    overflow: hidden; }
 #left #menu ul li a:hover span,
-#left #menu ul li a:hover span.r
+#left #menu ul li a:hover span.r,
+#left #menu ul li a.active span,
+#left #menu ul li a.active span.r
   { color: #fff;
     background-position: 0 -30px;
     text-decoration: none; }
+/* --- Submenu --- */
+#left #menu ul li ul li
+  { font-size: 90%;
+    margin: 0 0 0.2em 0.5em;
+    max-height: 18px;
+    overflow: hidden; }
+#left #menu ul li ul li span
+  { background: url('../images/bg/submenu_item_bg.png') 0 0 no-repeat;
+    padding: 0.1em 5px 0.1em 10px;
+    display: block;
+    height: 17px;
+    float: left; }
+#left #menu ul li ul li span.r
+  { background: url('../images/bg/submenu_item_bg.r.png') 0 0 no-repeat;
+    width: 11px;
+    padding: 0; }
+#left #menu ul li ul li a
+  { font-weight: normal; }
+#left #menu ul li ul li a:hover span,
+#left #menu ul li ul li a:hover span.r,
+#left #menu ul li ul li a.active span,
+#left #menu ul li ul li a.active span.r
+  { color: #fff;
+    background-position: 0 -21px;
+    text-decoration: none; }
 
-/* ==== MIDDLE ===*/
+/* ----- Rounded panel ------------------------------------------------------------------------- */
 
-#middle
-  { margin-right: 1em;
-    float: left;
-    width: 40em; }
-
-/* === CONTENT === */
-
-.content .highlight
-  { background-color: #d1eaff;
-    padding: 0.1em 0.3em 0.2em 0.3em;
-    font-weight: normal; }
-
-/* --- Panel --- */
 .panel .content,
 .panel .t,
 .panel .b,
@@ -267,33 +246,78 @@ body
 .panel .content *
   { padding-bottom: 0; }
 
-/* === RIGHT === */
-#right
-  { float: left; } 
+.panel,
+.panel .content
+  { color: #1b1d1f; }
+.panel .more
+  { text-decoration: underline; }
+.panel a,
+.panel a:hover
+  { color: #1b1d1f;
+    text-decoration: none; }
+.panel a:hover *
+  { color: #000; }
 
-/* === HOMEPAGE === */
 
+/* ----- Profile --------------------------------------------------------------------------- */
+
+.profil
+  { color: #313538;
+    font-size: 110%;
+    line-height: 130%;
+    margin: 0 0 1em 0; }
+
+
+/* ----- Press Releases ----------------------------------------------------------------------- */
+
+.press_releases
+  { color: #2a353b; }
 .press_releases ul
   { list-style-type: none; }
 .press_releases ul li
-  { clear: both;
+  { font-size: 95%;
+    clear: both;
     display: block;
     padding-bottom: 1em; }
 .press_releases li span.date
-  { display: block;
+  { font-size: 90%;
+    text-align: right;
+    width: 7em;
+    display: block;
     float: left; }
 .press_releases li span.content
-  { display: block;
+  { line-height: 125%;
+    display: block;
     margin-left: 1em;
     width: 17em;
     float: right; }
+.press_releases li span.content .more
+  { font-size: 90%;
+    text-decoration: underline; }
 .press_releases li span.content strong
   { display: block; }
+.press_releases h2
+  { color: #64737a;
+    font-size: 110%;
+    margin: 0 0 8px 0;
+    padding: 0 0 8px 0;
+    background: url('../images/dotted_line_300px.png') bottom left no-repeat; }
+.press_releases li a
+  { color: #2a353b;
+    text-decoration: none; } 
+.press_releases li a:hover
+  { text-decoration: none; } 
+.press_releases li a:hover strong
+  { color: #fb1f2d;
+    text-decoration: underline; }
 
-#right p.archive
-  { margin-left: 7em; } 
+.press_releases p.archive
+  { font-size: 90%;
+    margin-left: 7em; } 
 
-/* ===== FOOTER ================================================================================ */
+
+/* ----- Footer -------------------------------------------------------------------------------- */
+
 #footer
   { color: #5c5f66;
     font-size: 75%;
@@ -339,6 +363,3 @@ body
     background: url('../images/floral.png') center right no-repeat; 
     padding-right: 20px; 
     position: absolute; right: 1em; top: 1.3em; }
-
-
-@import url("panel.css")
