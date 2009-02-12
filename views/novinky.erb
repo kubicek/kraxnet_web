@@ -5,7 +5,7 @@
 <% @blog_items.each do |blog_item| %>
 <h2><%= blog_item.title %></h2>
 <div><%= human_date(blog_item.pubDate) %></div>
-<p><%= blog_item.description[0..200] %>
+<p><%= truncate( blog_item.description, 250) %>
 <a href="<%= blog_item.link %>">celý&nbsp;článek&nbsp;&raquo;</a></p>
 </p>
 

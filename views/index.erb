@@ -128,7 +128,7 @@
       <span class="date"><%= human_date(blog_item.pubDate) %></span>
       <span class="content">
         <strong><%= blog_item.title %></strong>
-        <%= blog_item.description[0..200] %>
+        <%= truncate(blog_item.description, 200) %>
         <span class="more">Celý článek&nbsp;&raquo;</span>
       </span>
       </a>

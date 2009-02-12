@@ -18,6 +18,10 @@ helpers do
     datetime.strftime('%d|%m|%Y').gsub(/([^0-9]+)0{1}(\d{1})/, '\1\2')
   end
 
+  def truncate(chars, limit = 50)
+    chars.size > limit ? chars.to_s[0...limit] + '&hellip;' : chars
+  end
+
 end
 
 get '/' do
