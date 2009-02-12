@@ -37,7 +37,7 @@ a { color: #2e3330; }
 /* Headers */
 .container h1
   { color: #596e80;
-    background: url('../images/bg/dot.red.png') center left no-repeat;
+    background: url('../images/bg/dot.red.png') 0 55% no-repeat;
     font-family: Tahoma, Helvetica, sans-serif;
     font-size: 200%;
     font-weight: normal;
@@ -58,6 +58,12 @@ a { color: #2e3330; }
   { font-size: 140%;
     margin: 1em 0 0.2em 0; }
 
+/* Lists */
+.container .content ul
+  { list-style-type: square;
+    margin: 0 0 0 1.1em; }
+.container .content ul li
+  { margin-bottom: 0.25em; }
 
 /* Text */
 .container p
@@ -242,13 +248,14 @@ body
 .panel .b div
   { height: 10px; font-size:1px; }
 .panel .content
-  { padding: 11px 1px 1px 1px; }
+  { padding: 11px 0.5em 1px 1px; }
 .panel .content *
   { padding-bottom: 0; }
 
 .panel,
 .panel .content
-  { color: #1b1d1f; }
+  { color: #1b1d1f;
+    font-size: 98%; }
 .panel .more
   { text-decoration: underline; }
 .panel a,
@@ -257,6 +264,12 @@ body
     text-decoration: none; }
 .panel a:hover *
   { color: #000; }
+
+.panel h3
+  { color: #1b1d1f;
+    font-size: 130%;
+    font-family: 'Lucida Grande', Tahoma, Helvetica, sans-serif;
+    margin: 0; }
 
 
 /* ----- Profile --------------------------------------------------------------------------- */
