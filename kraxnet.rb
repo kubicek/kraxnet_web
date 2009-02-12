@@ -12,14 +12,23 @@ module Kraxnet
   end
 end
 
+helpers do
+
+  def human_date(datetime)
+    datetime.strftime('%d|%m|%Y').gsub(/([^0-9]+)0{1}(\d{1})/, '\1\2')
+  end
+
+end
+
 get '/' do
+  @blog_items = Kraxnet::BlogFeed.load[0...3]
   erb :index
 end
 
 get '/novinky' do
   @blog_items = Kraxnet::BlogFeed.load
   @page_title = "Novinky"
-  erb :rss_reader
+  erb :novinky
 end
 
 get '/:id' do

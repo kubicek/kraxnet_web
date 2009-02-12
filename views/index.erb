@@ -122,29 +122,21 @@
   <div class="press_releases">
   <h2>Tiskové zprávy</h2>
   <ul>
+    <% @blog_items.each do |blog_item| %>
     <li>
-      <a href="#">
-      <span class="date">20/10/2008</span>
+      <a href="<%= blog_item.link %>">
+      <span class="date"><%= human_date(blog_item.pubDate) %></span>
       <span class="content">
-        <strong>První Ruby on Rails hosting zdarma</strong>
-        V sobotu byla spuštěna varianta hostingu Ruby on Rails zcela zdarma!
+        <strong><%= blog_item.title %></strong>
+        <%= blog_item.description[0..200] %>
         <span class="more">Celý článek&nbsp;&raquo;</span>
       </span>
       </a>
       <div class="clear">&nbsp;</div>
     </li>
-    <li>
-      <a href="#">
-      <span class="date">22/8/2008</span>
-      <span class="content">
-        <strong>Vylepšené nástroje pro větší počet domén a ještě delší nadpis</strong>
-        Pokud u nás máte více domén, máme pro Vás nástroje, které Vám usnadní jejich prodlužování a novou registraci. <span class="more">Celý článek&nbsp;&raquo;</span>
-      </span>
-      </a>
-      <div class="clear">&nbsp;</div>
-    </li>
+    <% end %>
   </ul>
   <div class="clear">&nbsp;</div>
-  <p class="archive"><a href="#">&rarr; Archiv tiskových zpráv</a></p>
+  <p class="archive"><a href="/novinky">&rarr; Archiv tiskových zpráv</a></p>
   </div><!-- /press_releases -->
 </div><!-- /right -->
