@@ -196,8 +196,7 @@ body
     display: block;
     height: 21px;
     float: left; 
-    max-width: 130px;
-    overflow: hidden; }
+    max-width: 130px; }
 #left #menu ul li span.r
   { background: url('../images/bg/menu_item_bg.r.png') 0 0 no-repeat;
     width: 11px;
@@ -241,6 +240,10 @@ body
   { color: #fff;
     background-position: 0 -21px;
     text-decoration: none; }
+#left #menu ul li span.clear
+  { background: none;
+    height: 0; width: 0;
+    clear: both; }
 
 /* ----- Rounded panel ------------------------------------------------------------------------- */
 
