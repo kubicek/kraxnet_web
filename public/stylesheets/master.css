@@ -342,6 +342,8 @@ body
   { font-size: 150%; }
 .press_releases.archive h3 small
   { font-size: 70%; }
+.press_releases.archive a
+  { text-decoration: none !important; }
 .press_releases.archive a:hover h3
   { text-decoration: underline; }
 .press_releases.archive a:hover p
